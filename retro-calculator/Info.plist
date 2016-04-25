@@ -36,5 +36,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>item 0</key>
+	<string>minecraft.ttf</string>
 </dict>
 </plist>
