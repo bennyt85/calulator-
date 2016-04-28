@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case Clear = "Clear"
     }
 
     @IBOutlet weak var outputLbl: UILabel!
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
     var rightValStr = ""
     var currentOperation: Operation = Operation.Empty
     var result = ""
+    var clear = ""
     
     
     
@@ -77,6 +79,18 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualPressed(sender:AnyObject) {
         processOperation(currentOperation)
+    }
+    
+    @IBAction func onClearPressed(sender:AnyObject) {
+    
+        outputLbl.text = "0"
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        result = ""
+        
+        
     }
     
     func processOperation(op: Operation) {
